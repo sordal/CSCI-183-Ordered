@@ -44,18 +44,18 @@ for( i in 1:61579)
 
 for(i in 1:61579)
 {
-  data$GalaxyID[i] <- GalaxyID
-  data$Variance <- var(as.vector(galaxy_photos)) # getting variance
-  data$mean[i] <- mean(galaxy_photos) # figuring out the mean
+  galaxy_dataframe$GalaxyID[i] <- GalaxyID
+  galaxy_dataframe$Variance <- var(as.vector(galaxy_photos)) # getting variance
+  galaxy_dataframe$mean[i] <- mean(galaxy_photos) # figuring out the mean
 }
 help(quantile)
 
 for(in in 1:61579)
 {
-  data$q1[i] <- quantile(galaxy_photos,.1) #splitting into the quantiles asked for in class
-  data$q2[i] <- quantile(galaxy_photos,.25)
-  data$q3[i] <- quantile(galaxy_photos,.75)
-  data$q4[i] <- quantile(galaxy_photos,.9)
+  galaxy_dataframe$q1[i] <- quantile(galaxy_photos,.1) #splitting into the quantiles asked for in class
+  galaxy_dataframe$q2[i] <- quantile(galaxy_photos,.25)
+  galaxy_dataframe$q3[i] <- quantile(galaxy_photos,.75)
+  galaxy_dataframe$q4[i] <- quantile(galaxy_photos,.9)
   
 }
 submit <- data.frame("GalaxyID" = GalaxyID, Prob_Smooth = mean)

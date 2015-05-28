@@ -26,14 +26,14 @@ galaxy_photos <- list.files(‘~/Documents/School/Data Science/kaggle/images_tra
 
 help(data.frame)
 
-galaxy_dataframe <- data.frame(GalaxyID = integer(length(galaxy_photos)),
-                               var1 = double(length(galaxy_photos)),
-                               mean = double(length(galaxy_photos)),
-                               q1 = double(length(galaxy_photos)),
-                               q2 = double(length(galaxy_photos)),
-                               q3 = double(length(galaxy_photos)),
-                               q4 = double(length(galaxy_photos)))
-
+galaxy_dataframe <- data.frame(GalaxyID = integer(length(galaxy_photos))
+galaxy_dataframe <- data.frame(var1 = double(length(galaxy_photos))
+galaxy_dataframe <- data.frame(mean = double(length(galaxy_photos))
+galaxy_dataframe <- data.frame(q1 = double(length(galaxy_photos))
+galaxy_dataframe <- data.frame(q2 = double(length(galaxy_photos))
+galaxy_dataframe <- data.frame(q3 = double(length(galaxy_photos))  
+galaxy_dataframe <- data.frame(q4 = double(length(galaxy_photos))
+                               
 for( i in 1:61579)
 {
   image <- readJpeg(galaxy_photos)
